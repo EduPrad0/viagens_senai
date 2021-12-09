@@ -1,0 +1,40 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-all: rgba(50, 230, 206, 0.89);
+  --bg-color: #FFFFFF;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+
+.home-header{
+  background-color: var(--color-all);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.home-header img {
+  max-width: 360px;
+}
+
+.home-header nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
