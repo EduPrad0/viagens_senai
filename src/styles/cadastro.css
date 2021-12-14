@@ -1,3 +1,94 @@
+body{
+    height: 100vh;
+}
+
 .index nav ul li:last-child{
     border-bottom: 1px solid black;
+}
+
+
+
+input[type='text'],  textarea, select {
+    max-width: 90%;
+    border: 0;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.7s;
+}
+
+input:hover[type='text'], input:hover[type='search'], input:hover[type='email'], .braintree-input:hover, .selectize-input:hover, textarea:hover, select:hover {
+    border-color: rgba(0,0,0,0.1);
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+
+form {
+    margin:1rem;
+
+}
+
+fieldset {
+    width:100%;
+    height:100%;
+}
+
+
+textarea {
+    min-height: 100px;
+    margin:0;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+input + input {
+    margin: 1.5rem 1rem;
+}
+
+legend {
+    font-family: teko, sans-serif;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+button {
+    margin: 0.5rem auto;
+    border: 0;
+    font-family: monospace;
+    background-color: #28a745;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+
+@media (min-width: 768px) {
+    main {
+        max-width: 80%;
+        margin: 10%;
+    }
 }

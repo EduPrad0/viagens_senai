@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta charset="UTF-8">
@@ -10,26 +11,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <title>Cadastro | Explore</title>
 </head>
+
 <body>
     <div id="root">
         <!--  Cabeçalho e menu nav -->
-         <header class="home-header index">
-             <img src="./src/assets/logo.png" alt="Logo">
-             <nav>
-                 <ul>
-                      <li> <a href="index.html">Home</a> </li>
-                     <li> <a href="sobre.html">Sobre</a></li>
-                     <li> <a href="cadastro.html">Cadastro</a></li>
-                 </ul>
-             </nav>
-         </header>
-                <!--  Cabeçalho e menu nav -->
-         
-     </div>
+        <header class="home-header index">
+            <img src="./src/assets/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="sobre.html">Sobre</a></li>
+                    <li> <a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--  Cabeçalho e menu nav -->
+        <main >
+            <h2 class="title" style="text-align: center; color: var(--bg-color-index)!important"> Entre em contato</h2>
+            <form action="https://formsubmit.co/dpradoeduardo@gmail.com" method="POST">
+                <fieldset>
+                    <legend>Contate-nos</legend>
+
+                    <input type="text" placeholder="User" id="name" >
+
+                    <input type="text" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Coloque um email exemplo : teste@gmail.com">
+
+                    <textarea  name="textarea-form" id="txta" cols="30" rows="10"> Fale conosco</textarea>
+
+                    <button type="button">Enviar</button>
+                </fieldset>
+            </form>
+        </main>
+        <!--Footer-->
+        <footer class="footerGlobal" style="position:absolute; bottom:0;width:100%;text-align:center">
+            <div class="redes">
+                <img width="30px" src="./src/assets/logo.png" alt="">
+                <ul>
+                    <li> <a href="#"><img src="./src/assets/svgs/face.svg" alt="Facebook"></a></li>
+                    <li> <a href="#"><img src="./src/assets/svgs/insta.svg" alt="Instagram"></a></li>
+                    <li> <a href="#"><img src="./src/assets/svgs/twi.svg" alt="Twwwiiitter"></a></li>
+                    <li> <a href="#"><img src="./src/assets/svgs/link.svg" alt="linked..."></a></li>
+                </ul>
+            </div>
+            <div class="devs">
+                <span>Desenvolvido por <span>Leandro &amp; Eduardo</span></span>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
 
 
