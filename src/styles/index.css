@@ -4,7 +4,7 @@
 
 body{
     width: 100vw;
-    background-color: #E0E0E0;
+    background-color: #495057;
 }
 
 @keyframes carrossel {
@@ -23,18 +23,19 @@ body{
 }
 
 .ref{
-    background-color: var(--bg-color);
+    background-color: var(--color-all);
     box-shadow: 10px 10px 10px rgba(0,0,0, 1);
     border-radius: 8px;
 }
 
 
-.container-carrossel{
-    margin: 10%;
-    padding: 5% 0;
+.carrossel-main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
 }
-
 .container-carrossel article{
+    margin: auto;
     position: relative;
     max-width: 300px; 
     height: 195px;
@@ -48,14 +49,21 @@ body{
 
 
 .carrossel-item p{
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     background-color: var(--bg-color-index);
     color: white;
+
     position: absolute;
     bottom: 5px;
-    left: 4px;
     border-radius: 8px;
-    width: 95%;
+    height: 10%;
+    padding: 0 3%;
+
+    margin-left: 20%;
 } 
 
 .carrossel-item img{
@@ -92,7 +100,7 @@ body{
 
 
 /* // services */
-#services{
+.viajar{
     margin: 5% 0;
 }
 
@@ -138,6 +146,7 @@ body{
     border: 0;
     border-radius: 8px;
     padding: .5rem 1rem;
+    cursor: pointer;
 }
 
 .black-area{
@@ -187,6 +196,10 @@ body{
     padding-bottom: 3rem;
 }
 
+#sobre_resumo p {
+    margin: 0 auto 1rem;
+    max-width: 60%;
+}
 
 #sobre_resumo h2, p {
     text-align: center;
@@ -204,10 +217,16 @@ body{
 /* Sobre_resumo */
 
 /* Servicos */
-#servicos{
+.viajar{
     max-width: 100%;
     padding: 1rem;
+    transition: all 0.4s;
 }
+.viajar:hover{
+    transform: scale(1.15);
+
+}
+
 .servicos_container{
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +251,7 @@ body{
 
 .title {
     text-align: center;
-    color: #fe6f20!important;
+    color: #6b705c!important;
 }
 
 /* Servicos */
@@ -251,7 +270,286 @@ body{
 }
 
 #mapa div iframe{
-    max-width: 320px;
+    padding:0 1rem;
+    width: 100vw;
 }
 
 /* Mapa */
+
+
+
+/* Medias query */
+@media (min-width: 800px) {
+    .carrossel-item p{
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: var(--bg-color-index);
+        color: white;
+    
+        position: absolute;
+        bottom: 5px;
+        border-radius: 8px;
+        height: 6%;
+    
+        max-width: 90%;
+        margin-left: 10%;
+    } 
+   /* Carrossel */
+    @keyframes carrossel {
+        0%, 20%{
+            transform: translateX(0);
+        }
+        25%, 45%{
+            transform: translateX(980px);
+        }
+        50%, 70%{
+            transform: translateX(1960px);
+        }
+        75%, 100%{
+            transform: translateX(2940px)
+        }
+    }
+
+    .container-carrossel{
+        margin: 10%;
+        padding: 5% 0;
+    }
+
+    .container-carrossel article{
+        position: relative;
+        max-width: 980px; 
+        height: 450px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .container-carrossel h1{
+        text-align: center;
+    }
+
+
+    .carrossel-item p{
+        text-align: center;
+        background-color: var(--bg-color-index);
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        left: 4px;
+        border-radius: 8px;
+        width: 100%;
+    } 
+
+    .carrossel-item img{
+        width: 980px; 
+        height: 450px;
+        display: inline-block;
+    }
+
+    .carrossel-item {
+        display:block;
+        animation: carrossel 10s alternate-reverse infinite;
+    }
+
+
+    .carrossel-item:first-child {
+        position: absolute;
+        right: 0;
+    }
+
+    .carrossel-item:nth-child(2) {
+        position: absolute;
+        right: 980px;
+    }
+
+    .carrossel-item:nth-child(3) {
+        position: absolute;
+        right: 1960px;
+    }
+
+    .carrossel-item:last-child {
+        position: absolute;
+        right: 2940px;
+    }
+    /* Carrossel */
+
+    /* Cards  */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .viajar {
+        max-width: 40%;
+    }
+   
+
+    /* Cards  */
+
+    /* Resumo  */
+    .text{
+        text-align: center;
+    }
+    /* Resumo  */
+
+    /* Servicos */
+    .servico_item {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        max-width: 25%;
+    }
+    .servico_item img {
+        max-width: 100%;
+    }
+    
+    /* Servicos */
+
+    /* mapa */
+    #mapa{
+        display: inline-block;
+    }
+
+    #mapa div iframe{
+        max-width: 100%;
+    }
+    /* mapa */
+}
+
+/* Media  */
+
+@media (min-width: 1200px) {
+    /* Carrossel  */
+    
+    
+    .carrossel-main{
+        background: var(--color-all);
+        max-width: 70%;
+        margin: 100px auto;
+    }
+
+    @keyframes animationTypography { from{opacity: 1} to{opacity: 0.5}}
+    .teste{
+        animation: animationTypography 5s alternate-reverse infinite;
+        font-size: 4rem;
+    }
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    @keyframes carrossel {
+        0%, 20%{
+            transform: translateX(0);
+        }
+        25%, 45%{
+            transform: translateX(1200px);
+        }
+        50%, 70%{
+            transform: translateX(2400px);
+        }
+        75%, 100%{
+            transform: translateX(3600px)
+        }
+    }
+
+
+    .container-carrossel{
+        margin: 2% 15% 5%;
+        padding: 5% 0;
+    }
+
+    .container-carrossel article{
+        position: relative;
+        max-width: 1200px; 
+        height: 600px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .container-carrossel h1{
+        text-align: center;
+    }
+
+
+    .carrossel-item p{
+        text-align: center;
+        background-color: var(--bg-color-index);
+        color: white;
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        border-radius: 8px;
+        width: 100%;
+    } 
+
+    .carrossel-item img{
+        width: 1200px; 
+        height: 600px;
+        display: inline-block;
+    }
+
+    .carrossel-item {
+        display:block;
+        animation: carrossel 10s alternate-reverse infinite;
+    }
+
+
+    .carrossel-item:first-child {
+        position: absolute;
+        right: 0;
+    }
+
+    .carrossel-item:nth-child(2) {
+        position: absolute;
+        right: 1200px;
+    }
+
+    .carrossel-item:nth-child(3) {
+        position: absolute;
+        right: 2400px;
+    }
+
+    .carrossel-item:last-child {
+        position: absolute;
+        right: 3600px;
+    }
+    /* Carrossel  */
+    /* Cards  */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .viajar {
+        max-width: 20%;
+    }
+
+
+    /* Cards  */
+     /* Servicos */
+     .servico_item {
+        display: flex;
+        flex-direction: column;
+        max-width: 15%;
+    }
+    .servico_item img {
+        max-width: 100%;
+    }
+    
+    /* Servicos */ 
+
+
+
+}
+
+/* Medias query */

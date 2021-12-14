@@ -1,3 +1,43 @@
+body{
+    height: 100vh;
+}
+
 .index nav ul li:nth-child(2){
     border-bottom: 1px solid black;
+}
+
+.sobre-container img{
+    margin-top: -20px;
+    margin-left: 20px;
+    max-width: 10%;
+}
+
+.sobre-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.text {
+    text-align: justify;
+    padding:0 5px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    color: #949494;
+    margin: 0 0 20px 0;
+}
+
+@media (min-width: 768px) {
+    .sobre-container{
+        text-align: center;
+        margin: 7% auto;
+    }
+
+    .sobre-container p::before{
+        content:"Alias obcaecati laborum repudiandae possimus! Quasi doloribus aut quidem fugit, ex sint earum soluta veniam pariatur quam libero deserunt atque quo quisquam ut, tempora ipsam! Nisi illo a dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad ipsam placeat maxime autem sed aut quae voluptates adipisci? Quis facilis nesciunt, voluptate soluta dolorum suscipit nemo eos labore veniam.Saepe porro aspernatur reprehenderit aperiam, culpa veniam labore ratione quae nisi, possimus similique amet. Repudiandae, ratione veritatis quis magni perspiciatis reprehenderit iste ipsam, quod dolores laudantium porro vitae! Repellendus, labore?Ex ea eaque adipisci nulla nemo voluptas quasi quo nostrum, officiis, quaerat earum minus repellat quod! Sint voluptas quibusdam officiis sunt, accusantium voluptatem, et, nisi quia nostrum natus delectus porro."
+    }
 }
